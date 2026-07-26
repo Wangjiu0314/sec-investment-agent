@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+      .brand { font-size: 23px; font-weight: 700; fill: #ffffff; }
+      .nav { font-size: 15px; fill: #b9c4c8; }
+      .title { font-size: 30px; font-weight: 700; fill: #172126; }
+      .panel { font-size: 19px; font-weight: 700; fill: #172126; }
+      .body { font-size: 15px; fill: #425158; }
+      .small { font-size: 13px; fill: #68777d; }
+      .tiny { font-size: 12px; fill: #718087; }
+      .white { fill: #ffffff; }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#edf1f2"/>
+  <rect x="0" y="0" width="1600" height="70" fill="#172126"/>
+  <text x="32" y="44" class="brand">Filing Research</text>
+  <text x="246" y="43" class="nav">公司研究</text>
+  <text x="342" y="43" class="nav">任务记录</text>
+  <text x="438" y="43" class="nav">证据索引</text>
+  <circle cx="1546" cy="35" r="18" fill="#13715b"/>
+  <text x="1546" y="41" text-anchor="middle" class="white" font-size="13" font-weight="700">王</text>
+
+  <rect x="0" y="70" width="280" height="830" fill="#ffffff"/>
+  <text x="24" y="116" class="small">公司</text>
+  <rect x="20" y="132" width="240" height="42" rx="6" fill="#f5f7f7" stroke="#d7e0e2"/>
+  <circle cx="43" cy="153" r="10" fill="none" stroke="#68777d" stroke-width="2"/>
+  <line x1="50" y1="160" x2="57" y2="167" stroke="#68777d" stroke-width="2"/>
+  <text x="70" y="159" class="body">搜索 ticker</text>
+
+  <rect x="16" y="196" width="248" height="72" rx="6" fill="#e8f2ef"/>
+  <rect x="16" y="196" width="4" height="72" fill="#13715b"/>
+  <text x="34" y="225" class="panel">JPM</text>
+  <text x="34" y="250" class="small">JPMorgan Chase &amp; Co.</text>
+  <text x="24" y="305" class="small">已完成</text>
+  <rect x="20" y="322" width="240" height="58" rx="6" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="36" y="347" class="panel" font-size="17">AAPL</text>
+  <text x="36" y="368" class="tiny">2025 10-K · complete</text>
+  <rect x="20" y="392" width="240" height="58" rx="6" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="36" y="417" class="panel" font-size="17">GOOGL</text>
+  <text x="36" y="438" class="tiny">2025 10-K · complete</text>
+
+  <text x="312" y="120" class="title">JPMorgan Chase &amp; Co.</text>
+  <text x="312" y="150" class="small">10-K · 报告期 2025-12-31 · 申报日 2026-02-13</text>
+  <rect x="1370" y="101" width="190" height="42" rx="6" fill="#13715b"/>
+  <text x="1465" y="128" text-anchor="middle" class="white" font-size="15" font-weight="700">继续完整分析</text>
+
+  <rect x="304" y="184" width="1256" height="112" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="328" y="218" class="panel">执行状态</text>
+  <line x1="352" y1="260" x2="1480" y2="260" stroke="#d4dddf" stroke-width="4"/>
+  <circle cx="376" cy="260" r="14" fill="#13715b"/>
+  <circle cx="646" cy="260" r="14" fill="#ca7a28"/>
+  <circle cx="916" cy="260" r="14" fill="#d4dddf"/>
+  <circle cx="1186" cy="260" r="14" fill="#d4dddf"/>
+  <circle cx="1456" cy="260" r="14" fill="#d4dddf"/>
+  <text x="376" y="285" text-anchor="middle" class="tiny">结构提取</text>
+  <text x="646" y="285" text-anchor="middle" class="tiny">标题识别 160/912</text>
+  <text x="916" y="285" text-anchor="middle" class="tiny">Map</text>
+  <text x="1186" y="285" text-anchor="middle" class="tiny">Reduce</text>
+  <text x="1456" y="285" text-anchor="middle" class="tiny">Review</text>
+
+  <rect x="304" y="316" width="810" height="548" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="330" y="356" class="panel">研究备忘录</text>
+  <rect x="330" y="378" width="758" height="56" rx="6" fill="#f5f7f7"/>
+  <text x="350" y="403" class="small">执行摘要</text>
+  <text x="350" y="424" class="tiny">最终报告将在全部验证完成后生成；当前显示已确认的结构与证据。</text>
+
+  <text x="330" y="474" class="panel">已识别研究范围</text>
+  <rect x="330" y="492" width="230" height="92" rx="6" fill="#e8f2ef" stroke="#b9d8cf"/>
+  <text x="348" y="522" class="small">Business 标题</text>
+  <text x="348" y="558" fill="#13715b" font-size="28" font-weight="700">16</text>
+  <rect x="576" y="492" width="230" height="92" rx="6" fill="#fbeeee" stroke="#e6c0c0"/>
+  <text x="594" y="522" class="small">Risk 标题</text>
+  <text x="594" y="558" fill="#a64949" font-size="28" font-weight="700">48</text>
+  <rect x="822" y="492" width="266" height="92" rx="6" fill="#edf3f6" stroke="#c8dbe5"/>
+  <text x="840" y="522" class="small">MD&amp;A 标题</text>
+  <text x="840" y="558" fill="#3178a5" font-size="28" font-weight="700">2</text>
+
+  <text x="330" y="630" class="panel">关键边界检查</text>
+  <rect x="330" y="650" width="758" height="82" rx="6" fill="#fff7e8" stroke="#ead0a5"/>
+  <text x="350" y="679" class="body">Item 7 · Management’s Discussion and Analysis</text>
+  <text x="350" y="708" class="small">标题后正文仅 396 字符 · 判定为短引用 · 不进入 MD&amp;A Map</text>
+  <rect x="330" y="746" width="758" height="82" rx="6" fill="#e8f2ef" stroke="#b9d8cf"/>
+  <text x="350" y="775" class="body">Management’s discussion and analysis</text>
+  <text x="350" y="804" class="small">真实正文标题 · 已保留 · source block B001906</text>
+
+  <rect x="1134" y="316" width="426" height="548" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="1160" y="356" class="panel">证据检查器</text>
+  <text x="1160" y="387" class="small">选中标题</text>
+  <rect x="1158" y="404" width="378" height="88" rx="6" fill="#f5f7f7"/>
+  <text x="1176" y="432" class="body">B001906</text>
+  <text x="1176" y="460" class="small">role: content_heading · level: 1</text>
+  <text x="1176" y="482" class="small">section: mda · confidence: 1.00</text>
+  <text x="1160" y="532" class="small">SEC 原文</text>
+  <rect x="1158" y="550" width="378" height="188" rx="6" fill="#172126"/>
+  <text x="1178" y="580" class="tiny white">Management’s discussion and analysis</text>
+  <text x="1178" y="610" class="tiny white">The following is Management’s discussion</text>
+  <text x="1178" y="634" class="tiny white">and analysis of the financial condition</text>
+  <text x="1178" y="658" class="tiny white">and results of operations of JPMorganChase</text>
+  <text x="1178" y="682" class="tiny white">for the year ended December 31, 2025...</text>
+  <rect x="1158" y="758" width="378" height="48" rx="6" fill="#edf3f6"/>
+  <text x="1176" y="788" class="body">source_start → source_end 可追溯</text>
+  <text x="1160" y="842" class="tiny">效果图 · 非当前已实现网页界面</text>
+</svg>

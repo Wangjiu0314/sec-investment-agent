@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+      .title { font-size: 38px; font-weight: 700; fill: #172126; }
+      .subtitle { font-size: 18px; fill: #5c6a70; }
+      .section { font-size: 17px; font-weight: 700; fill: #5c6a70; }
+      .card-title { font-size: 21px; font-weight: 700; fill: #172126; }
+      .body { font-size: 16px; fill: #425158; }
+      .small { font-size: 14px; fill: #65747a; }
+      .num { font-size: 15px; font-weight: 700; fill: #ffffff; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#7b8a90"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f4f7f7"/>
+  <rect x="0" y="0" width="1600" height="12" fill="#13715b"/>
+  <text x="72" y="72" class="title">SEC 10-K 研究 Agent：从原文到可审计备忘录</text>
+  <text x="72" y="108" class="subtitle">DeepSeek 负责语义判断，Python 负责边界、证据、状态与执行</text>
+
+  <text x="72" y="165" class="section">输入与结构化</text>
+  <text x="600" y="165" class="section">Agent 工作流</text>
+  <text x="1300" y="165" class="section">交付结果</text>
+
+  <rect x="72" y="190" width="410" height="630" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <rect x="96" y="218" width="362" height="116" rx="6" fill="#e8f2ef" stroke="#b9d8cf"/>
+  <circle cx="128" cy="250" r="16" fill="#13715b"/>
+  <text x="128" y="256" text-anchor="middle" class="num">1</text>
+  <text x="158" y="255" class="card-title">用户提出公司研究请求</text>
+  <text x="120" y="292" class="body">“分析 JPM 最新的 10-K”</text>
+  <text x="120" y="317" class="small">LangChain Agent 判断并调用本地财报工具</text>
+
+  <line x1="277" y1="334" x2="277" y2="373" stroke="#7b8a90" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="96" y="384" width="362" height="132" rx="6" fill="#f7f9f9" stroke="#d7e0e2"/>
+  <circle cx="128" cy="416" r="16" fill="#3178a5"/>
+  <text x="128" y="422" text-anchor="middle" class="num">2</text>
+  <text x="158" y="421" class="card-title">SEC 原始申报</text>
+  <text x="120" y="458" class="body">下载最新 10-K HTML 与元数据</text>
+  <text x="120" y="484" class="small">保留公司、报告期、申报日、原文 URL</text>
+
+  <line x1="277" y1="516" x2="277" y2="555" stroke="#7b8a90" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="96" y="566" width="362" height="216" rx="6" fill="#f7f9f9" stroke="#d7e0e2"/>
+  <circle cx="128" cy="598" r="16" fill="#ca7a28"/>
+  <text x="128" y="604" text-anchor="middle" class="num">3</text>
+  <text x="158" y="603" class="card-title">HTML 结构单元</text>
+  <text x="120" y="642" class="body">标题 · 段落 · 表格 · 样式 · 原文位置</text>
+  <rect x="120" y="669" width="314" height="36" rx="4" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="136" y="693" class="small">B001906  ·  bold  ·  12pt  ·  source_start</text>
+  <rect x="120" y="718" width="314" height="36" rx="4" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="136" y="742" class="small">Management’s discussion and analysis</text>
+
+  <line x1="482" y1="505" x2="552" y2="505" stroke="#7b8a90" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="566" y="190" width="670" height="630" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <rect x="594" y="218" width="614" height="96" rx="6" fill="#edf3f6" stroke="#c8dbe5"/>
+  <rect x="612" y="238" width="54" height="54" rx="6" fill="#3178a5"/>
+  <text x="639" y="272" text-anchor="middle" class="num">API</text>
+  <text x="687" y="253" class="card-title">Heading Router</text>
+  <text x="687" y="281" class="body">DeepSeek 判断正文标题、目录、页眉、交叉引用与层级</text>
+
+  <line x1="901" y1="314" x2="901" y2="348" stroke="#7b8a90" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="594" y="358" width="614" height="100" rx="6" fill="#fff7e8" stroke="#ead0a5"/>
+  <rect x="612" y="379" width="54" height="54" rx="6" fill="#ca7a28"/>
+  <text x="639" y="413" text-anchor="middle" class="num">PY</text>
+  <text x="687" y="394" class="card-title">边界校验与区间构造</text>
+  <text x="687" y="422" class="body">验证 block ID、标题顺序、正文长度；区间内部再切块</text>
+
+  <line x1="901" y1="458" x2="901" y2="492" stroke="#7b8a90" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="594" y="502" width="186" height="126" rx="6" fill="#e8f2ef" stroke="#b9d8cf"/>
+  <text x="614" y="536" class="card-title">Business Map</text>
+  <text x="614" y="568" class="small">业务 · 客户 · 市场</text>
+  <text x="614" y="594" class="small">竞争 · 战略 · 监管</text>
+  <rect x="800" y="502" width="186" height="126" rx="6" fill="#fbeeee" stroke="#e6c0c0"/>
+  <text x="820" y="536" class="card-title">Risk Map</text>
+  <text x="820" y="568" class="small">风险状态 · 原因</text>
+  <text x="820" y="594" class="small">潜在影响 · 证据</text>
+  <rect x="1006" y="502" width="202" height="126" rx="6" fill="#edf3f6" stroke="#c8dbe5"/>
+  <text x="1026" y="536" class="card-title">MD&amp;A Map</text>
+  <text x="1026" y="568" class="small">指标 · 期间 · 单位</text>
+  <text x="1026" y="594" class="small">变化 · 管理层解释</text>
+
+  <line x1="901" y1="628" x2="901" y2="662" stroke="#7b8a90" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="594" y="672" width="296" height="112" rx="6" fill="#f7f9f9" stroke="#d7e0e2"/>
+  <text x="616" y="708" class="card-title">Reduce 汇总</text>
+  <text x="616" y="740" class="body">去重、全局编号、形成章节结论</text>
+  <rect x="912" y="672" width="296" height="112" rx="6" fill="#f7f9f9" stroke="#d7e0e2"/>
+  <text x="934" y="708" class="card-title">Semantic Review</text>
+  <text x="934" y="740" class="body">逐条审查结论与 SEC 证据</text>
+
+  <line x1="1236" y1="505" x2="1280" y2="505" stroke="#7b8a90" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="1292" y="190" width="236" height="630" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <rect x="1316" y="218" width="188" height="166" rx="6" fill="#e8f2ef" stroke="#b9d8cf"/>
+  <text x="1338" y="255" class="card-title">研究备忘录</text>
+  <text x="1338" y="290" class="body">执行摘要</text>
+  <text x="1338" y="318" class="body">业务概览</text>
+  <text x="1338" y="346" class="body">关键风险</text>
+  <text x="1338" y="374" class="body">MD&amp;A 观察</text>
+  <rect x="1316" y="406" width="188" height="144" rx="6" fill="#edf3f6" stroke="#c8dbe5"/>
+  <text x="1338" y="443" class="card-title">证据索引</text>
+  <text x="1338" y="479" class="body">SEC 原文位置</text>
+  <text x="1338" y="507" class="body">引用编号</text>
+  <text x="1338" y="535" class="body">审计 JSON</text>
+  <rect x="1316" y="572" width="188" height="184" rx="6" fill="#fff7e8" stroke="#ead0a5"/>
+  <text x="1338" y="609" class="card-title">可恢复执行</text>
+  <text x="1338" y="645" class="body">断点缓存</text>
+  <text x="1338" y="673" class="body">真实 diagnostics</text>
+  <text x="1338" y="701" class="body">状态只读查询</text>
+  <text x="1338" y="729" class="body">无后台假象</text>
+
+  <text x="72" y="862" class="small">核心原则：模型输出不是事实，只有通过结构、数值和证据验证后才能进入最终报告。</text>
+</svg>

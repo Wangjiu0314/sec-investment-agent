@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent 项目图稿预览</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Microsoft YaHei", Arial, sans-serif;
+      background: #edf1f2;
+      color: #172126;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 18px 28px;
+      background: #172126;
+      color: #fff;
+    }
+    h1 { margin: 0; font-size: 22px; letter-spacing: 0; }
+    header p { margin: 0; color: #b9c4c8; font-size: 14px; }
+    main { padding: 28px; }
+    section { margin: 0 0 32px; }
+    .meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    h2 { margin: 0; font-size: 17px; letter-spacing: 0; }
+    a { color: #13715b; font-size: 14px; }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid #cbd5d8;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(23, 33, 38, 0.08);
+    }
+    @media (min-width: 1500px) {
+      main { max-width: 1440px; margin: 0 auto; }
+    }
+    @media (max-width: 700px) {
+      header { align-items: flex-start; flex-direction: column; }
+      main { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agent 项目图稿预览</h1>
+    <p>1600 × 900 · SVG · PPT 16:9</p>
+  </header>
+  <main>
+    <section>
+      <div class="meta"><h2>01 总体架构</h2><a href="01_agent_architecture.svg">打开 SVG</a></div>
+      <img src="01_agent_architecture.svg" alt="SEC 10-K Agent 总体架构">
+    </section>
+    <section>
+      <div class="meta"><h2>02 架构演进</h2><a href="02_architecture_evolution.svg">打开 SVG</a></div>
+      <img src="02_architecture_evolution.svg" alt="Agent 架构演进">
+    </section>
+    <section>
+      <div class="meta"><h2>03 可信性护栏</h2><a href="03_reliability_guardrails.svg">打开 SVG</a></div>
+      <img src="03_reliability_guardrails.svg" alt="Agent 可信性护栏">
+    </section>
+    <section>
+      <div class="meta"><h2>04 项目证据板</h2><a href="04_project_evidence.svg">打开 SVG</a></div>
+      <img src="04_project_evidence.svg" alt="项目验证数据">
+    </section>
+    <section>
+      <div class="meta"><h2>05 产品效果图</h2><a href="05_product_mockup.svg">打开 SVG</a></div>
+      <img src="05_product_mockup.svg" alt="财报研究 Agent 产品效果图">
+    </section>
+  </main>
+</body>
+</html>

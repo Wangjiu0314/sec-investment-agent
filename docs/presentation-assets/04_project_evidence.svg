@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+      .title { font-size: 38px; font-weight: 700; fill: #172126; }
+      .subtitle { font-size: 18px; fill: #5c6a70; }
+      .metric { font-size: 42px; font-weight: 700; fill: #172126; }
+      .metric-label { font-size: 16px; fill: #5c6a70; }
+      .panel-title { font-size: 22px; font-weight: 700; fill: #172126; }
+      .body { font-size: 16px; fill: #425158; }
+      .small { font-size: 14px; fill: #68777d; }
+      .white { fill: #ffffff; }
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#f4f7f7"/>
+  <rect x="0" y="0" width="1600" height="12" fill="#13715b"/>
+  <text x="72" y="72" class="title">项目证据板：哪些已经完成，哪些仍在验证</text>
+  <text x="72" y="108" class="subtitle">数据截至当前本地状态；JPM 新标题架构尚未生成最终报告</text>
+
+  <rect x="72" y="150" width="340" height="132" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="98" y="205" class="metric">34 / 34</text>
+  <text x="98" y="244" class="metric-label">自动化测试通过</text>
+  <rect x="432" y="150" width="340" height="132" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="458" y="205" class="metric">2</text>
+  <text x="458" y="244" class="metric-label">完整公司报告</text>
+  <rect x="792" y="150" width="340" height="132" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="818" y="205" class="metric">26,288</text>
+  <text x="818" y="244" class="metric-label">JPM HTML 结构单元</text>
+  <rect x="1152" y="150" width="376" height="132" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="1178" y="205" class="metric">160 / 912</text>
+  <text x="1178" y="244" class="metric-label">JPM 标题候选已审查</text>
+
+  <rect x="72" y="318" width="924" height="474" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="102" y="362" class="panel-title">跨公司执行状态</text>
+  <text x="102" y="393" class="small">Map 数量表示通过结构校验并进入汇总的分析块</text>
+
+  <text x="110" y="458" class="panel-title">AAPL</text>
+  <rect x="245" y="430" width="610" height="42" rx="4" fill="#e7edef"/>
+  <rect x="245" y="430" width="610" height="42" rx="4" fill="#13715b"/>
+  <text x="870" y="458" class="body">31 / 31 Map</text>
+  <rect x="110" y="484" width="96" height="28" rx="4" fill="#e8f2ef"/>
+  <text x="158" y="504" text-anchor="middle" fill="#13715b" font-size="14" font-weight="700">COMPLETE</text>
+
+  <text x="110" y="572" class="panel-title">GOOGL</text>
+  <rect x="245" y="544" width="610" height="42" rx="4" fill="#e7edef"/>
+  <rect x="245" y="544" width="610" height="42" rx="4" fill="#3178a5"/>
+  <text x="870" y="572" class="body">47 / 47 Map</text>
+  <rect x="110" y="598" width="96" height="28" rx="4" fill="#edf3f6"/>
+  <text x="158" y="618" text-anchor="middle" fill="#3178a5" font-size="14" font-weight="700">COMPLETE</text>
+
+  <text x="110" y="686" class="panel-title">JPM</text>
+  <rect x="245" y="658" width="610" height="42" rx="4" fill="#e7edef"/>
+  <rect x="245" y="658" width="107" height="42" rx="4" fill="#ca7a28"/>
+  <text x="870" y="686" class="body">160 / 912 标题候选</text>
+  <rect x="110" y="712" width="120" height="28" rx="4" fill="#fff7e8"/>
+  <text x="170" y="732" text-anchor="middle" fill="#a45e16" font-size="14" font-weight="700">IN PROGRESS</text>
+
+  <rect x="1020" y="318" width="508" height="474" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <text x="1050" y="362" class="panel-title">已验证能力</text>
+  <rect x="1050" y="398" width="448" height="62" rx="6" fill="#e8f2ef" stroke="#b9d8cf"/>
+  <circle cx="1080" cy="429" r="13" fill="#13715b"/>
+  <path d="M1073 429 L1078 434 L1088 423" fill="none" stroke="#fff" stroke-width="3"/>
+  <text x="1106" y="435" class="body">SEC 下载、结构提取、来源定位</text>
+  <rect x="1050" y="474" width="448" height="62" rx="6" fill="#edf3f6" stroke="#c8dbe5"/>
+  <circle cx="1080" cy="505" r="13" fill="#3178a5"/>
+  <path d="M1073 505 L1078 510 L1088 499" fill="none" stroke="#fff" stroke-width="3"/>
+  <text x="1106" y="511" class="body">数字、期间、单位、引用验证</text>
+  <rect x="1050" y="550" width="448" height="62" rx="6" fill="#e8f2ef" stroke="#b9d8cf"/>
+  <circle cx="1080" cy="581" r="13" fill="#13715b"/>
+  <path d="M1073 581 L1078 586 L1088 575" fill="none" stroke="#fff" stroke-width="3"/>
+  <text x="1106" y="587" class="body">Map / Reduce / Review 与断点缓存</text>
+  <rect x="1050" y="626" width="448" height="62" rx="6" fill="#fff7e8" stroke="#ead0a5"/>
+  <circle cx="1080" cy="657" r="13" fill="#ca7a28"/>
+  <path d="M1073 657 L1078 662 L1088 651" fill="none" stroke="#fff" stroke-width="3"/>
+  <text x="1106" y="663" class="body">标题角色、层级与短正文边界校验</text>
+  <rect x="1050" y="702" width="448" height="62" rx="6" fill="#fbeeee" stroke="#e6c0c0"/>
+  <circle cx="1080" cy="733" r="13" fill="#a64949"/>
+  <rect x="1074" y="727" width="12" height="12" fill="#fff"/>
+  <text x="1106" y="739" class="body">待完成：JPM 新架构端到端报告</text>
+
+  <text x="72" y="846" class="small">结果同时展示已完成项与未完成项，确保状态可解释、验证边界清晰。</text>
+</svg>

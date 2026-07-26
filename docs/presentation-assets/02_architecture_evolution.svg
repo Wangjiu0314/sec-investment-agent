@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      text { font-family: "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; letter-spacing: 0; }
+      .title { font-size: 38px; font-weight: 700; fill: #172126; }
+      .subtitle { font-size: 18px; fill: #5c6a70; }
+      .stage { font-size: 28px; font-weight: 700; fill: #172126; }
+      .label { font-size: 15px; font-weight: 700; fill: #ffffff; }
+      .body { font-size: 17px; fill: #425158; }
+      .small { font-size: 14px; fill: #66757b; }
+      .quote { font-size: 18px; font-weight: 700; fill: #172126; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#7b8a90"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#f4f7f7"/>
+  <rect x="0" y="0" width="1600" height="12" fill="#3178a5"/>
+  <text x="72" y="72" class="title">从“能跑”到“可泛化”：架构如何被真实财报推着演进</text>
+  <text x="72" y="108" class="subtitle">每次失败都暴露一个错误假设，而不是简单增加一家公司的特殊规则</text>
+
+  <line x1="232" y1="180" x2="1368" y2="180" stroke="#c5d0d3" stroke-width="4"/>
+  <circle cx="260" cy="180" r="18" fill="#7b8a90"/>
+  <circle cx="800" cy="180" r="18" fill="#3178a5"/>
+  <circle cx="1340" cy="180" r="18" fill="#13715b"/>
+
+  <rect x="72" y="220" width="440" height="570" rx="8" fill="#ffffff" stroke="#d7e0e2"/>
+  <rect x="96" y="244" width="76" height="30" rx="4" fill="#7b8a90"/>
+  <text x="134" y="265" text-anchor="middle" class="label">V1</text>
+  <text x="96" y="315" class="stage">固定 Item 边界</text>
+  <text x="96" y="357" class="body">Item 1 → Business</text>
+  <text x="96" y="389" class="body">Item 1A → Risk Factors</text>
+  <text x="96" y="421" class="body">Item 7 → MD&amp;A</text>
+  <rect x="96" y="458" width="392" height="108" rx="6" fill="#e8f2ef" stroke="#b9d8cf"/>
+  <text x="116" y="493" class="quote">AAPL：成功</text>
+  <text x="116" y="526" class="small">结构规整，Map 31/31，完整报告生成</text>
+  <rect x="96" y="586" width="392" height="164" rx="6" fill="#fbeeee" stroke="#e6c0c0"/>
+  <text x="116" y="622" class="quote">错误假设</text>
+  <text x="116" y="658" class="body">“所有公司正文都紧跟 Item 标题”</text>
+  <text x="116" y="694" class="small">规则看似稳定，其实只对已见样本稳定</text>
+
+  <line x1="512" y1="505" x2="590" y2="505" stroke="#7b8a90" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="580" y="220" width="440" height="570" rx="8" fill="#ffffff" stroke="#c8dbe5" stroke-width="2"/>
+  <rect x="604" y="244" width="76" height="30" rx="4" fill="#3178a5"/>
+  <text x="642" y="265" text-anchor="middle" class="label">V2</text>
+  <text x="604" y="315" class="stage">通用块语义路由</text>
+  <text x="604" y="357" class="body">全文按长度形成 document chunks</text>
+  <text x="604" y="389" class="body">DeepSeek 给整块添加章节标签</text>
+  <text x="604" y="421" class="body">Python验证标签与来源位置</text>
+  <rect x="604" y="458" width="392" height="108" rx="6" fill="#edf3f6" stroke="#c8dbe5"/>
+  <text x="624" y="493" class="quote">GOOGL：数值泛化修复</text>
+  <text x="624" y="526" class="small">期间、million/billion、证据单位统一验证</text>
+  <rect x="604" y="586" width="392" height="164" rx="6" fill="#fff7e8" stroke="#ead0a5"/>
+  <text x="624" y="622" class="quote">新问题</text>
+  <text x="624" y="658" class="body">一个固定大小块可能混合两种内容</text>
+  <text x="624" y="694" class="small">法律 + 财务混在同一块，标签无法表达边界</text>
+
+  <line x1="1020" y1="505" x2="1098" y2="505" stroke="#7b8a90" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="1088" y="220" width="440" height="570" rx="8" fill="#ffffff" stroke="#b9d8cf" stroke-width="2"/>
+  <rect x="1112" y="244" width="76" height="30" rx="4" fill="#13715b"/>
+  <text x="1150" y="265" text-anchor="middle" class="label">V3</text>
+  <text x="1112" y="315" class="stage">标题驱动语义区间</text>
+  <text x="1112" y="357" class="body">保留 HTML 标题、段落、表格、样式</text>
+  <text x="1112" y="389" class="body">API 判断标题角色与层级</text>
+  <text x="1112" y="421" class="body">Python按标题边界构造区间后再切块</text>
+  <rect x="1112" y="458" width="392" height="108" rx="6" fill="#e8f2ef" stroke="#b9d8cf"/>
+  <text x="1132" y="493" class="quote">JPM：暴露交叉引用</text>
+  <text x="1132" y="526" class="small">Item 7 只有 396 字符；真正 MD&amp;A 在后文</text>
+  <rect x="1112" y="586" width="392" height="164" rx="6" fill="#e8f2ef" stroke="#b9d8cf"/>
+  <text x="1132" y="622" class="quote">当前原则</text>
+  <text x="1132" y="658" class="body">标题由模型理解，边界由代码执行</text>
+  <text x="1132" y="694" class="small">不为银行、能源、制药分别堆关键词</text>
+
+  <rect x="72" y="822" width="1456" height="48" rx="6" fill="#172126"/>
+  <text x="800" y="853" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">工程价值不在“第一次就正确”，而在发现假设、建立验证、让失败可复现并持续演进。</text>
+</svg>
